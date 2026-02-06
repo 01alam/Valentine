@@ -18,7 +18,7 @@ function nextMessage() {
 
 function yes() {
   const message = encodeURIComponent(
-    "Hi. I saw your Valentine page. I’d like to know you too."
+    "Hi. I saw your Valentine page. I’d like to talk to you."
   );
 
   const phoneNumber = "917518478301"; // ← your WhatsApp number (with country code)
@@ -34,4 +34,5 @@ function no() {
     "Thank you for your honesty.\nI wish you peace and happiness.";
   document.getElementById("choices").style.display = "none";
 }
+
 
