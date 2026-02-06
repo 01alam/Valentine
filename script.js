@@ -17,9 +17,16 @@ function nextMessage() {
 }
 
 function yes() {
-  document.getElementById("final").innerText =
-    "Thank you for your courage.\nWhatever happens, I promise respect.";
-  document.getElementById("choices").style.display = "none";
+  const message = encodeURIComponent(
+    "Hi. I saw your Valentine page. I’d like to know you too."
+  );
+
+  const phoneNumber = "917518478301"; // ← your WhatsApp number (with country code)
+
+  window.open(
+    `https://wa.me/${phoneNumber}?text=${message}`,
+    "_blank"
+  );
 }
 
 function no() {
@@ -27,3 +34,4 @@ function no() {
     "Thank you for your honesty.\nI wish you peace and happiness.";
   document.getElementById("choices").style.display = "none";
 }
+
